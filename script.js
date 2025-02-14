@@ -75,8 +75,19 @@ function handleNoClick() {
     messageIndex = (messageIndex + 1) % messages.length;
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
+
+    const gifElement = document.getElementById("gif");
+    
+    // Define the new GIF URL (Change this to your desired GIF)
+    const newGifUrl = "bubu-dudu-bubu.gif";
+    
+    // Change the GIF source
+    gifElement.src = newGifUrl;
+    
+   
 }
 
 function handleYesClick() {
     window.location.href = "yes_page.html";
 }
+
